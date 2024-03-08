@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03999BCB2B920AF2003520F4 /* Sphere.usda in Resources */ = {isa = PBXBuildFile; fileRef = 03999BC82B920AF2003520F4 /* Sphere.usda */; };
+		03999BCC2B920AF2003520F4 /* HotelRoom1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03999BC92B920AF2003520F4 /* HotelRoom1.mp4 */; };
+		03999BCD2B920AF2003520F4 /* HotelRoom2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 03999BCA2B920AF2003520F4 /* HotelRoom2.mp4 */; };
+		03999BD42B920B17003520F4 /* HotelPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BCE2B920B17003520F4 /* HotelPlayerViewModel.swift */; };
+		03999BD52B920B17003520F4 /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BCF2B920B17003520F4 /* SuggestionsView.swift */; };
+		03999BD62B920B17003520F4 /* HotelRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BD02B920B17003520F4 /* HotelRoomView.swift */; };
+		03999BD72B920B17003520F4 /* HotelImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BD12B920B17003520F4 /* HotelImmersiveView.swift */; };
+		03999BD82B920B17003520F4 /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BD22B920B17003520F4 /* HotelViewModel.swift */; };
+		03999BD92B920B17003520F4 /* HotelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BD32B920B17003520F4 /* HotelListView.swift */; };
+		03999BF12B96E81B003520F4 /* SpatialContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BF02B96E81B003520F4 /* SpatialContentView.swift */; };
+		03999BF32B96E87C003520F4 /* Room1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 03999BF22B96E87C003520F4 /* Room1.MOV */; };
+		03999BF92B96E886003520F4 /* SpatialVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BF42B96E886003520F4 /* SpatialVideo.swift */; };
+		03999BFA2B96E886003520F4 /* VideoWatchingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BF52B96E886003520F4 /* VideoWatchingActivity.swift */; };
+		03999BFB2B96E886003520F4 /* SpatialPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BF62B96E886003520F4 /* SpatialPlayerView.swift */; };
+		03999BFC2B96E886003520F4 /* SpatialPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BF72B96E886003520F4 /* SpatialPlayerModel.swift */; };
+		03999BFD2B96E886003520F4 /* VideoWatchingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999BF82B96E886003520F4 /* VideoWatchingCoordinator.swift */; };
+		D838CACA2B90B71D007A7E6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838CAC92B90B71D007A7E6B /* Constants.swift */; };
+		D8C25BC92B8C88A5009B96C0 /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = D8C25BC82B8C88A5009B96C0 /* SiriWaveView */; };
+		D8C25BCC2B8C8921009B96C0 /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = D8C25BCB2B8C8921009B96C0 /* XCAOpenAIClient */; };
+		D8C25BD22B8C955B009B96C0 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C25BD12B8C955B009B96C0 /* ConversationView.swift */; };
+		D8C25BD42B8C95B1009B96C0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C25BD32B8C95B1009B96C0 /* ViewModel.swift */; };
+		D8C25BD62B8C95CF009B96C0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C25BD52B8C95CF009B96C0 /* MessageView.swift */; };
+		D8C25BD82B8C963F009B96C0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C25BD72B8C963F009B96C0 /* Models.swift */; };
+		D8E003182B91E388000600F1 /* ImmersiveMapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E003172B91E388000600F1 /* ImmersiveMapview.swift */; };
+		FC51FA712B94E14700783F8B /* RoomOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51FA702B94E14700783F8B /* RoomOptionsView.swift */; };
+		FC96DCE62B87597C004F7D42 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = FC96DCE52B87597C004F7D42 /* RealityKitContent */; };
+		FC96DCE82B87597C004F7D42 /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC96DCE72B87597C004F7D42 /* WanderlustApp.swift */; };
+		FC96DCEA2B87597C004F7D42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC96DCE92B87597C004F7D42 /* ContentView.swift */; };
+		FC96DCEC2B87597C004F7D42 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC96DCEB2B87597C004F7D42 /* ImmersiveView.swift */; };
+		FC96DCEE2B87597D004F7D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC96DCED2B87597D004F7D42 /* Assets.xcassets */; };
+		FC96DCF12B87597D004F7D42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC96DCF02B87597D004F7D42 /* Preview Assets.xcassets */; };
+		FC96DCF92B875BA3004F7D42 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC96DCF82B875BA3004F7D42 /* ChatViewModel.swift */; };
+		FC96DCFB2B8C863F004F7D42 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC96DCFA2B8C863F004F7D42 /* MapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03999BC82B920AF2003520F4 /* Sphere.usda */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sphere.usda; sourceTree = "<group>"; };
+		03999BC92B920AF2003520F4 /* HotelRoom1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HotelRoom1.mp4; sourceTree = "<group>"; };
+		03999BCA2B920AF2003520F4 /* HotelRoom2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HotelRoom2.mp4; sourceTree = "<group>"; };
+		03999BCE2B920B17003520F4 /* HotelPlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelPlayerViewModel.swift; sourceTree = "<group>"; };
+		03999BCF2B920B17003520F4 /* SuggestionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
+		03999BD02B920B17003520F4 /* HotelRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelRoomView.swift; sourceTree = "<group>"; };
+		03999BD12B920B17003520F4 /* HotelImmersiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelImmersiveView.swift; sourceTree = "<group>"; };
+		03999BD22B920B17003520F4 /* HotelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
+		03999BD32B920B17003520F4 /* HotelListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelListView.swift; sourceTree = "<group>"; };
+		03999BF02B96E81B003520F4 /* SpatialContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialContentView.swift; sourceTree = "<group>"; };
+		03999BF22B96E87C003520F4 /* Room1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Room1.MOV; sourceTree = "<group>"; };
+		03999BF42B96E886003520F4 /* SpatialVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialVideo.swift; sourceTree = "<group>"; };
+		03999BF52B96E886003520F4 /* VideoWatchingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWatchingActivity.swift; sourceTree = "<group>"; };
+		03999BF62B96E886003520F4 /* SpatialPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialPlayerView.swift; sourceTree = "<group>"; };
+		03999BF72B96E886003520F4 /* SpatialPlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpatialPlayerModel.swift; sourceTree = "<group>"; };
+		03999BF82B96E886003520F4 /* VideoWatchingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWatchingCoordinator.swift; sourceTree = "<group>"; };
+		D838CAC92B90B71D007A7E6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D8C25BD12B8C955B009B96C0 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		D8C25BD32B8C95B1009B96C0 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D8C25BD52B8C95CF009B96C0 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		D8C25BD72B8C963F009B96C0 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D8E003172B91E388000600F1 /* ImmersiveMapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveMapview.swift; sourceTree = "<group>"; };
+		FC51FA702B94E14700783F8B /* RoomOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomOptionsView.swift; sourceTree = "<group>"; };
+		FC96DCE02B87597C004F7D42 /* Wanderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC96DCE42B87597C004F7D42 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		FC96DCE72B87597C004F7D42 /* WanderlustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderlustApp.swift; sourceTree = "<group>"; };
+		FC96DCE92B87597C004F7D42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC96DCEB2B87597C004F7D42 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		FC96DCED2B87597D004F7D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC96DCF02B87597D004F7D42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC96DCF22B87597D004F7D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC96DCF82B875BA3004F7D42 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		FC96DCFA2B8C863F004F7D42 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC96DCDD2B87597C004F7D42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C25BCC2B8C8921009B96C0 /* XCAOpenAIClient in Frameworks */,
+				FC96DCE62B87597C004F7D42 /* RealityKitContent in Frameworks */,
+				D8C25BC92B8C88A5009B96C0 /* SiriWaveView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03999BC72B920AF2003520F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03999BC82B920AF2003520F4 /* Sphere.usda */,
+				03999BC92B920AF2003520F4 /* HotelRoom1.mp4 */,
+				03999BF22B96E87C003520F4 /* Room1.MOV */,
+				03999BCA2B920AF2003520F4 /* HotelRoom2.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC96DCD72B87597B004F7D42 = {
+			isa = PBXGroup;
+			children = (
+				FC96DCE22B87597C004F7D42 /* Wanderlust */,
+				FC96DCE32B87597C004F7D42 /* Packages */,
+				FC96DCE12B87597C004F7D42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC96DCE12B87597C004F7D42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC96DCE02B87597C004F7D42 /* Wanderlust.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC96DCE22B87597C004F7D42 /* Wanderlust */ = {
+			isa = PBXGroup;
+			children = (
+				03999BC72B920AF2003520F4 /* Resources */,
+				FC96DCE72B87597C004F7D42 /* WanderlustApp.swift */,
+				D8C25BD12B8C955B009B96C0 /* ConversationView.swift */,
+				FC96DCF82B875BA3004F7D42 /* ChatViewModel.swift */,
+				FC96DCE92B87597C004F7D42 /* ContentView.swift */,
+				D8C25BD72B8C963F009B96C0 /* Models.swift */,
+				FC96DCEB2B87597C004F7D42 /* ImmersiveView.swift */,
+				D8C25BD52B8C95CF009B96C0 /* MessageView.swift */,
+				D8C25BD32B8C95B1009B96C0 /* ViewModel.swift */,
+				FC96DCFA2B8C863F004F7D42 /* MapView.swift */,
+				03999BD12B920B17003520F4 /* HotelImmersiveView.swift */,
+				03999BD32B920B17003520F4 /* HotelListView.swift */,
+				03999BF72B96E886003520F4 /* SpatialPlayerModel.swift */,
+				03999BF62B96E886003520F4 /* SpatialPlayerView.swift */,
+				03999BF42B96E886003520F4 /* SpatialVideo.swift */,
+				03999BF52B96E886003520F4 /* VideoWatchingActivity.swift */,
+				03999BF82B96E886003520F4 /* VideoWatchingCoordinator.swift */,
+				03999BF02B96E81B003520F4 /* SpatialContentView.swift */,
+				03999BCE2B920B17003520F4 /* HotelPlayerViewModel.swift */,
+				03999BD02B920B17003520F4 /* HotelRoomView.swift */,
+				03999BD22B920B17003520F4 /* HotelViewModel.swift */,
+				03999BCF2B920B17003520F4 /* SuggestionsView.swift */,
+				FC51FA702B94E14700783F8B /* RoomOptionsView.swift */,
+				D838CAC92B90B71D007A7E6B /* Constants.swift */,
+				FC96DCED2B87597D004F7D42 /* Assets.xcassets */,
+				FC96DCF22B87597D004F7D42 /* Info.plist */,
+				FC96DCEF2B87597D004F7D42 /* Preview Content */,
+				D8E003172B91E388000600F1 /* ImmersiveMapview.swift */,
+			);
+			path = Wanderlust;
+			sourceTree = "<group>";
+		};
+		FC96DCE32B87597C004F7D42 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FC96DCE42B87597C004F7D42 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		FC96DCEF2B87597D004F7D42 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FC96DCF02B87597D004F7D42 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC96DCDF2B87597C004F7D42 /* Wanderlust */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC96DCF52B87597D004F7D42 /* Build configuration list for PBXNativeTarget "Wanderlust" */;
+			buildPhases = (
+				FC96DCDC2B87597C004F7D42 /* Sources */,
+				FC96DCDD2B87597C004F7D42 /* Frameworks */,
+				FC96DCDE2B87597C004F7D42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wanderlust;
+			packageProductDependencies = (
+				FC96DCE52B87597C004F7D42 /* RealityKitContent */,
+				D8C25BC82B8C88A5009B96C0 /* SiriWaveView */,
+				D8C25BCB2B8C8921009B96C0 /* XCAOpenAIClient */,
+			);
+			productName = Wanderlust;
+			productReference = FC96DCE02B87597C004F7D42 /* Wanderlust.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC96DCD82B87597B004F7D42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FC96DCDF2B87597C004F7D42 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = FC96DCDB2B87597B004F7D42 /* Build configuration list for PBXProject "Wanderlust" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC96DCD72B87597B004F7D42;
+			packageReferences = (
+				D8C25BC72B8C88A5009B96C0 /* XCRemoteSwiftPackageReference "SiriWaveView" */,
+				D8C25BCA2B8C8921009B96C0 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
+			);
+			productRefGroup = FC96DCE12B87597C004F7D42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC96DCDF2B87597C004F7D42 /* Wanderlust */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC96DCDE2B87597C004F7D42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC96DCF12B87597D004F7D42 /* Preview Assets.xcassets in Resources */,
+				03999BF32B96E87C003520F4 /* Room1.MOV in Resources */,
+				03999BCB2B920AF2003520F4 /* Sphere.usda in Resources */,
+				FC96DCEE2B87597D004F7D42 /* Assets.xcassets in Resources */,
+				03999BCC2B920AF2003520F4 /* HotelRoom1.mp4 in Resources */,
+				03999BCD2B920AF2003520F4 /* HotelRoom2.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC96DCDC2B87597C004F7D42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC96DCEA2B87597C004F7D42 /* ContentView.swift in Sources */,
+				FC96DCE82B87597C004F7D42 /* WanderlustApp.swift in Sources */,
+				03999BD52B920B17003520F4 /* SuggestionsView.swift in Sources */,
+				FC96DCFB2B8C863F004F7D42 /* MapView.swift in Sources */,
+				03999BFA2B96E886003520F4 /* VideoWatchingActivity.swift in Sources */,
+				FC51FA712B94E14700783F8B /* RoomOptionsView.swift in Sources */,
+				FC96DCF92B875BA3004F7D42 /* ChatViewModel.swift in Sources */,
+				D8C25BD82B8C963F009B96C0 /* Models.swift in Sources */,
+				03999BF12B96E81B003520F4 /* SpatialContentView.swift in Sources */,
+				FC96DCEC2B87597C004F7D42 /* ImmersiveView.swift in Sources */,
+				03999BFB2B96E886003520F4 /* SpatialPlayerView.swift in Sources */,
+				03999BD42B920B17003520F4 /* HotelPlayerViewModel.swift in Sources */,
+				D8C25BD42B8C95B1009B96C0 /* ViewModel.swift in Sources */,
+				D8C25BD62B8C95CF009B96C0 /* MessageView.swift in Sources */,
+				03999BD62B920B17003520F4 /* HotelRoomView.swift in Sources */,
+				03999BD72B920B17003520F4 /* HotelImmersiveView.swift in Sources */,
+				03999BFC2B96E886003520F4 /* SpatialPlayerModel.swift in Sources */,
+				03999BFD2B96E886003520F4 /* VideoWatchingCoordinator.swift in Sources */,
+				03999BF92B96E886003520F4 /* SpatialVideo.swift in Sources */,
+				03999BD82B920B17003520F4 /* HotelViewModel.swift in Sources */,
+				D8E003182B91E388000600F1 /* ImmersiveMapview.swift in Sources */,
+				D8C25BD22B8C955B009B96C0 /* ConversationView.swift in Sources */,
+				D838CACA2B90B71D007A7E6B /* Constants.swift in Sources */,
+				03999BD92B920B17003520F4 /* HotelListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC96DCF32B87597D004F7D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		FC96DCF42B87597D004F7D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		FC96DCF62B87597D004F7D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wanderlust/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Allow Speech";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yml.Wanderlust;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		FC96DCF72B87597D004F7D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wanderlust/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Allow Speech";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yml.Wanderlust;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC96DCDB2B87597B004F7D42 /* Build configuration list for PBXProject "Wanderlust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC96DCF32B87597D004F7D42 /* Debug */,
+				FC96DCF42B87597D004F7D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC96DCF52B87597D004F7D42 /* Build configuration list for PBXNativeTarget "Wanderlust" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC96DCF62B87597D004F7D42 /* Debug */,
+				FC96DCF72B87597D004F7D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8C25BC72B8C88A5009B96C0 /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D8C25BCA2B8C8921009B96C0 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAOpenAIClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8C25BC82B8C88A5009B96C0 /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8C25BC72B8C88A5009B96C0 /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+		D8C25BCB2B8C8921009B96C0 /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8C25BCA2B8C8921009B96C0 /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
+			productName = XCAOpenAIClient;
+		};
+		FC96DCE52B87597C004F7D42 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FC96DCD82B87597B004F7D42 /* Project object */;
+}

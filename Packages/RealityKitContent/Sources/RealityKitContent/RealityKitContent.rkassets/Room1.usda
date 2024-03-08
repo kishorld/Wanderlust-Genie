@@ -1,0 +1,2095 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 1.0 (409.60.6)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "interior" (
+        active = true
+        references = @interior.usdz@
+    )
+    {
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (-0.0003206356, 0, 0.012405932)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Materials"
+        {
+            over "initialShadingGroup"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "lambert4SG"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "phong2SG"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "mia_material3SG1"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "defaultMaterial"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+
+                over "Shader"
+                {
+                    color3f inputs:diffuseColor = (0.9498631, 0.3721334, 0.33270392) (
+                        colorSpace = "srgb_displayp3"
+                    )
+                    color3f inputs:emissiveColor = (0.9479328, 0.015388891, 0.003114353) (
+                        colorSpace = "lin_srgb"
+                    )
+                }
+            }
+
+            over "mia_material8SG"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "mia_material_x1SG1"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "mia_material_x1SG"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "mia_material13SG"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+
+            over "mia_material12SG"
+            {
+                token outputs:mtlx:surface
+                token outputs:realitykit:vertex
+            }
+        }
+
+        over "Geom"
+        {
+            reorder nameChildren = ["Box020", "Box022", "Box023", "Box024", "Box025", "Box026", "Box027", "Box028", "Box030", "Box031", "Box032", "Box033", "Box034", "Box035", "Box036", "Box037", "Box038", "Box039", "Box041", "Box042", "Box043", "Box044", "Box046", "Box062", "Box063", "Box064", "Box065", "Box066", "Box067", "Box068", "Box069", "Box070", "Box071", "Box072", "Box073", "Box074", "Box075", "Box076", "Box077", "Box078", "Box079", "Box080", "Box081", "Box082", "Cylinder066", "Cylinder067", "Cylinder068", "Box083", "Sphere003", "Box087", "Sphere020", "Sphere021", "Sphere022", "Sphere023", "Plane001", "Box088", "Box104", "Box132", "Box133", "Box134", "Cylinder081", "Cylinder082", "Cylinder083", "Cylinder084", "Cylinder085", "Cylinder086", "Cylinder087", "Cylinder088", "Cylinder089", "Cylinder090", "Cylinder091", "Cylinder092", "Cylinder093", "Cylinder094", "Cylinder095", "Cylinder096", "Cylinder097", "Cylinder098", "Cylinder099", "Cylinder100", "Box135", "Box136", "Sphere024", "Sphere025", "Box141", "Box142", "Box143", "Cylinder119", "Cylinder120", "Cylinder121", "Cylinder122", "ChamferBox003", "ChamferBox004", "Cylinder101", "Cylinder102", "Cylinder103", "Cylinder104", "Cylinder105", "Cylinder106", "Box006", "Box007", "Box008", "Box009", "Box010", "Box014", "Box015", "Box016", "Box017", "Box018", "Cylinder123", "Cylinder128", "Cylinder129", "Cylinder130", "Cylinder131", "Cylinder132", "Cylinder133", "Cylinder134", "Cylinder135", "Cylinder136", "Cylinder137", "Cylinder138", "Box144", "Plane002", "Box005_sofa", "sofa_Box003", "sofa_Box004", "Cylinder001_table", "table_Cylinder002", "table_Box001", "Cylinder001_keitchenFBXASC032chair", "keitchenFBXASC032chair_Cylinder002", "keitchenFBXASC032chair_Cylinder003", "keitchenFBXASC032chair_Sphere001", "Box011_sofa001", "sofa001_Box012", "sofa001_Box013", "Cylinder005_tablekit", "tablekit_Cylinder006", "tablekit_Cylinder007", "tablekit_Cylinder008", "tablekit_Box021", "Sphere002_keitchenFBXASC032chair001", "keitchenFBXASC032chair001_Cylinder009", "keitchenFBXASC032chair001_Cylinder010", "keitchenFBXASC032chair001_Cylinder011", "ChamferBox002_chair", "chair_Cylinder012", "chair_Cylinder013", "chair_Cylinder014", "chair_Cylinder015", "chair_Cylinder016", "chair_Cylinder017", "chair_ChamferBox001", "Cylinder037_light", "light_Box047", "light_Cylinder036", "Cylinder038_light001", "light001_Cylinder039", "light001_Box048", "Cylinder040_light002", "light002_Cylinder041", "light002_Box049", "Cylinder042_light003", "light003_Cylinder043", "light003_Box050", "Cylinder044_light004", "light004_Cylinder045", "light004_Box051", "Cylinder046_light005", "light005_Cylinder047", "light005_Box052", "Cylinder050_light007", "light007_Cylinder051", "light007_Box054", "Cylinder052_light008", "light008_Cylinder053", "light008_Box055", "Cylinder054_light009", "light009_Cylinder055", "light009_Box056", "Cylinder056_light010", "light010_Cylinder057", "light010_Box057", "Cylinder058_light011", "light011_Cylinder059", "light011_Box058", "Cylinder060_light012", "light012_Cylinder061", "light012_Box059", "Cylinder062_light013", "light013_Cylinder063", "light013_Box060", "Cylinder064_light014", "light014_Cylinder065", "light014_Box061", "Sphere011_fruits", "fruits_Sphere004", "fruits_Sphere005", "fruits_Sphere006", "fruits_Sphere007", "fruits_Sphere008", "fruits_Sphere009", "fruits_Sphere010", "fruits_Sphere019", "fruits_Sphere012", "fruits_Sphere013", "fruits_Sphere014", "fruits_Sphere015", "fruits_Sphere016", "fruits_Sphere017", "fruits_Sphere018", "fruits_Cylinder069", "Cylinder070_Group001", "Group001_Cylinder071", "Group001_Cylinder072", "Group001_Cylinder073", "Group001_Box085", "Group001_Box086", "Group001_Box084", "Box089_Group002", "Group002_Box090", "Group002_Box091", "Group002_Box092", "Group002_Box093", "Group002_Box094", "Group002_Box095", "Group002_Box096", "Group002_Box097", "Group002_Box098", "Group002_Box099", "Group002_Box100", "Group002_Box101", "Group002_Box102", "Group002_Box103", "Group002_Box105", "Group002_Box106", "Group002_Box107", "Group002_Box108", "Group002_Box109", "Group002_Box110", "Box111_Group003", "Group003_Box112", "Group003_Box113", "Group003_Box114", "Group003_Box115", "Group003_Box116", "Group003_Box117", "Group003_Box118", "Group003_Box119", "Group003_Box120", "Group003_Box121", "Group003_Box122", "Group003_Box123", "Group003_Box124", "Group003_Box125", "Group003_Box126", "Group003_Box127", "Group003_Box128", "Group003_Box129", "Group003_Box130", "Group003_Box131", "ChamferBox005_chair002", "chair002_ChamferBox006", "chair002_Cylinder107", "chair002_Cylinder108", "chair002_Cylinder109", "chair002_Cylinder110", "chair002_Cylinder111", "chair002_Cylinder112", "ChamferBox007_chair003", "chair003_ChamferBox008", "chair003_Cylinder113", "chair003_Cylinder114", "chair003_Cylinder115", "chair003_Cylinder116", "chair003_Cylinder117", "chair003_Cylinder118", "Cylinder124_Group004", "Group004_Cylinder125", "Cylinder126_Group005", "Group005_Cylinder127", "Cylinder003_tv_tv", "tv_tv_Cylinder004", "tv_tv_Box002", "Group"]
+            over "Box082" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Materials/defaultMaterial> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+
+                def "MaplePlywood" (
+                    active = true
+                    references = @MaplePlywood.usdz@
+                )
+                {
+                    color3f inputs:Basecolor_Tint (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-56.812614, 67.17455)
+                                float2 sizeInSubgraph = (160.5, 53)
+                                int stackingOrderInSubgraph = 2328
+                            }
+                        }
+                    )
+                    float2 inputs:UV_Scale (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-725.2588, 351.55255)
+                                float2 sizeInSubgraph = (138.5, 53)
+                                int stackingOrderInSubgraph = 2272
+                            }
+                        }
+                    )
+                    float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+                    over "Dot"
+                    {
+                        float2 ui:nodegraph:node:size = (44, 18)
+                    }
+
+                    over "multiply"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "add"
+                    {
+                        float2 ui:nodegraph:node:size = (61.5, 36.5)
+                    }
+
+                    over "PreviewSurface"
+                    {
+                        float2 ui:nodegraph:node:size = (148.5, 199)
+                    }
+
+                    over "Mix"
+                    {
+                        float2 ui:nodegraph:node:size = (109, 145)
+                    }
+
+                    over "Swizzle"
+                    {
+                        float2 ui:nodegraph:node:size = (133.5, 40)
+                    }
+
+                    over "Swizzle_1"
+                    {
+                        float2 ui:nodegraph:node:size = (145.5, 53)
+                    }
+
+                    over "Multiply_1"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "BaseColor"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Roughness"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Metallic"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Normal"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+                }
+            }
+
+            over "Box007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box009" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box010" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box014" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box015" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box016" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box017" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box018" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "sofa_Box003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+
+                def "BrownLeather" (
+                    active = true
+                    references = @BrownLeather.usdz@
+                )
+                {
+                    color3f inputs:Basecolor_Tint (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-45.51249, 49.172512)
+                                float2 sizeInSubgraph = (160.5, 53)
+                                int stackingOrderInSubgraph = 2268
+                            }
+                        }
+                    )
+                    float2 inputs:UV_Scale (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-695.3267, 352.1356)
+                                float2 sizeInSubgraph = (138.5, 53)
+                                int stackingOrderInSubgraph = 2240
+                            }
+                        }
+                    )
+                    float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+                    over "Mix"
+                    {
+                        float2 ui:nodegraph:node:size = (109, 145)
+                    }
+
+                    over "Swizzle_1"
+                    {
+                        float2 ui:nodegraph:node:size = (145.5, 53)
+                    }
+
+                    over "Swizzle"
+                    {
+                        float2 ui:nodegraph:node:size = (133.5, 40)
+                    }
+
+                    over "Multiply_1"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "Dot"
+                    {
+                        float2 ui:nodegraph:node:size = (44, 18)
+                    }
+
+                    over "multiply"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "add"
+                    {
+                        float2 ui:nodegraph:node:size = (61.5, 36.5)
+                    }
+
+                    over "PreviewSurface"
+                    {
+                        float2 ui:nodegraph:node:size = (148.5, 199)
+                    }
+
+                    over "BaseColor"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Roughness"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Metallic"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Normal"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+                }
+            }
+
+            over "Box005_sofa" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "sofa_Box004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder001_table" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "table_Cylinder002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "table_Box001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box011_sofa001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "sofa001_Box012" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "sofa001_Box013" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder005_tablekit" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "tablekit_Cylinder006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "tablekit_Cylinder007" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "tablekit_Cylinder008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "tablekit_Box021" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair002_Cylinder107" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair002_Cylinder108" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair002_Cylinder109" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair002_Cylinder110" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair002_Cylinder111" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair002_Cylinder112" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair002_ChamferBox006" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "ChamferBox005_chair002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "ChamferBox007_chair003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair003_ChamferBox008" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair003_Cylinder113" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair003_Cylinder114" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair003_Cylinder115" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair003_Cylinder116" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair003_Cylinder117" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair003_Cylinder118" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "tv_tv_Box002" (
+                active = true
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BlackABSPlastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "tv_tv_Cylinder004" (
+                active = true
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder003_tv_tv" (
+                active = true
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder101" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder102" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder103" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder104" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder105" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder106" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "ChamferBox003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "ChamferBox004" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "ChamferBox002_chair" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair_ChamferBox001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/sofa_Box003/BrownLeather> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair_Cylinder012" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair_Cylinder013" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair_Cylinder014" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair_Cylinder015" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair_Cylinder016" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "chair_Cylinder017" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box020" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BlackABSPlastic> (
+                    bindMaterialAs = "strongerThanDescendants"
+                )
+            }
+
+            over "Box044" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box044/LightBlueDenimFabric> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+
+                def "LightBlueDenimFabric" (
+                    active = true
+                    prepend references = @LightBlueDenimFabric.usdz@
+                )
+                {
+                    color3f inputs:Basecolor_Tint (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-45.51249, 49.172512)
+                                float2 sizeInSubgraph = (160.5, 53)
+                                int stackingOrderInSubgraph = 2280
+                            }
+                        }
+                    )
+                    float2 inputs:UV_Scale (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-725.2588, 351.55255)
+                                float2 sizeInSubgraph = (138.5, 53)
+                                int stackingOrderInSubgraph = 2272
+                            }
+                        }
+                    )
+                    float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+                    over "Mix"
+                    {
+                        float2 ui:nodegraph:node:size = (109, 145)
+                    }
+
+                    over "Swizzle_1"
+                    {
+                        float2 ui:nodegraph:node:size = (145.5, 53)
+                    }
+
+                    over "Swizzle"
+                    {
+                        float2 ui:nodegraph:node:size = (133.5, 40)
+                    }
+
+                    over "Multiply_1"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "Dot"
+                    {
+                        float2 ui:nodegraph:node:size = (44, 18)
+                    }
+
+                    over "multiply"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "add"
+                    {
+                        float2 ui:nodegraph:node:size = (61.5, 36.5)
+                    }
+
+                    over "PreviewSurface"
+                    {
+                        float2 ui:nodegraph:node:size = (148.5, 199)
+                    }
+
+                    over "BaseColor"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Roughness"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Metallic"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Normal"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+                }
+            }
+
+            over "Box046"
+            {
+                def "WoodPlank" (
+                    active = true
+                    prepend references = @WoodPlank.usdz@
+                )
+                {
+                    color3f inputs:Basecolor_Tint (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-56.812614, 67.17455)
+                                float2 sizeInSubgraph = (160.5, 53)
+                                int stackingOrderInSubgraph = 2352
+                            }
+                        }
+                    )
+                    float2 inputs:UV_Scale (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-725.2588, 351.55255)
+                                float2 sizeInSubgraph = (138.5, 53)
+                                int stackingOrderInSubgraph = 2272
+                            }
+                        }
+                    )
+                    float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+                    over "Dot"
+                    {
+                        float2 ui:nodegraph:node:size = (44, 18)
+                    }
+
+                    over "multiply"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "add"
+                    {
+                        float2 ui:nodegraph:node:size = (61.5, 36.5)
+                    }
+
+                    over "PreviewSurface"
+                    {
+                        float2 ui:nodegraph:node:size = (148.5, 199)
+                    }
+
+                    over "Mix"
+                    {
+                        float2 ui:nodegraph:node:size = (109, 145)
+                    }
+
+                    over "Swizzle"
+                    {
+                        float2 ui:nodegraph:node:size = (133.5, 40)
+                    }
+
+                    over "Swizzle_1"
+                    {
+                        float2 ui:nodegraph:node:size = (145.5, 53)
+                    }
+
+                    over "Multiply_1"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "BaseColor"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Roughness"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Metallic"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Normal"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+                }
+            }
+
+            over "Box078" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BlackABSPlastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box080" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/BlackABSPlastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder067" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder066" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Materials/defaultMaterial> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box083" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box044/LightBlueDenimFabric> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Plane001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Plane001/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+
+                def "WoodPlank" (
+                    active = true
+                    prepend references = @WoodPlank.usdz@
+                )
+                {
+                    color3f inputs:Basecolor_Tint (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-56.812614, 67.17455)
+                                float2 sizeInSubgraph = (160.5, 53)
+                                int stackingOrderInSubgraph = 2352
+                            }
+                        }
+                    )
+                    float2 inputs:UV_Scale (
+                        customData = {
+                            dictionary realitykit = {
+                                float2 positionInSubgraph = (-725.2588, 351.55255)
+                                float2 sizeInSubgraph = (138.5, 53)
+                                int stackingOrderInSubgraph = 2272
+                            }
+                        }
+                    )
+                    float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+                    over "Dot"
+                    {
+                        float2 ui:nodegraph:node:size = (44, 18)
+                    }
+
+                    over "multiply"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "add"
+                    {
+                        float2 ui:nodegraph:node:size = (61.5, 36.5)
+                    }
+
+                    over "PreviewSurface"
+                    {
+                        float2 ui:nodegraph:node:size = (148.5, 199)
+                    }
+
+                    over "Mix"
+                    {
+                        float2 ui:nodegraph:node:size = (109, 145)
+                    }
+
+                    over "Swizzle"
+                    {
+                        float2 ui:nodegraph:node:size = (133.5, 40)
+                    }
+
+                    over "Swizzle_1"
+                    {
+                        float2 ui:nodegraph:node:size = (145.5, 53)
+                    }
+
+                    over "Multiply_1"
+                    {
+                        float2 ui:nodegraph:node:size = (60, 36)
+                    }
+
+                    over "BaseColor"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Roughness"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Metallic"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+
+                    over "Normal"
+                    {
+                        float2 ui:nodegraph:node:size = (158.5, 235)
+                    }
+                }
+            }
+
+            over "Box088" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box104" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box132" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box133" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box134" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box006/MaplePlywood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder081" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder082" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder083" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder084" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder085" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder086" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder087" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder088" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder089" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder090" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder091" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder092" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder093" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder094" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder095" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder096" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder097" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder098" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder099" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder100" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box142" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box044/LightBlueDenimFabric> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box141" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box044/LightBlueDenimFabric> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder119" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder120" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder121" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Cylinder122" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/ScratchedMetallicPaint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box089_Group002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box090" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box091" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box092" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box093" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box094" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box095" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box096" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box097" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box098" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box099" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box100" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box101" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box102" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box103" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box105" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box106" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box107" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box108" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box109" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group002_Box110" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box111_Group003" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box112" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box113" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box114" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box115" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box116" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box117" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box118" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box119" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box120" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box121" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box122" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box123" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box124" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box125" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box126" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box127" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box128" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box129" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box130" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Group003_Box131" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box046/WoodPlank> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Plane002" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Materials/white_plastic1SG> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+
+            over "Box028" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/interior/Geom/Box044/LightBlueDenimFabric> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+    }
+
+    def "BrownLeather" (
+        active = true
+        references = @BrownLeather.usdz@
+    )
+    {
+        color3f inputs:Basecolor_Tint (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-45.51249, 49.172512)
+                    float2 sizeInSubgraph = (160.5, 53)
+                    int stackingOrderInSubgraph = 2268
+                }
+            }
+        )
+        float2 inputs:UV_Scale (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-695.3267, 352.1356)
+                    float2 sizeInSubgraph = (138.5, 53)
+                    int stackingOrderInSubgraph = 2240
+                }
+            }
+        )
+        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+        over "Mix"
+        {
+            float2 ui:nodegraph:node:size = (109, 145)
+        }
+
+        over "Swizzle_1"
+        {
+            float2 ui:nodegraph:node:size = (145.5, 53)
+        }
+
+        over "Swizzle"
+        {
+            float2 ui:nodegraph:node:size = (133.5, 40)
+        }
+
+        over "Multiply_1"
+        {
+            float2 ui:nodegraph:node:size = (60, 36)
+        }
+
+        over "Dot"
+        {
+            float2 ui:nodegraph:node:size = (44, 18)
+        }
+
+        over "multiply"
+        {
+            float2 ui:nodegraph:node:size = (60, 36)
+        }
+
+        over "add"
+        {
+            float2 ui:nodegraph:node:size = (61.5, 36.5)
+        }
+
+        over "PreviewSurface"
+        {
+            float2 ui:nodegraph:node:size = (148.5, 199)
+        }
+
+        over "BaseColor"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Roughness"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Metallic"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Normal"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+    }
+
+    def "ScratchedMetallicPaint" (
+        active = true
+        references = @ScratchedMetallicPaint.usdz@
+    )
+    {
+        color3f inputs:Basecolor_Tint (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-56.812614, 67.17455)
+                    float2 sizeInSubgraph = (160.5, 53)
+                    int stackingOrderInSubgraph = 2344
+                }
+            }
+        )
+        float2 inputs:UV_Scale (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-725.2588, 351.55255)
+                    float2 sizeInSubgraph = (138.5, 53)
+                    int stackingOrderInSubgraph = 2272
+                }
+            }
+        )
+        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+        over "Dot"
+        {
+            float2 ui:nodegraph:node:size = (44, 18)
+        }
+
+        over "multiply"
+        {
+            float2 ui:nodegraph:node:size = (60, 36)
+        }
+
+        over "add"
+        {
+            float2 ui:nodegraph:node:size = (61.5, 36.5)
+        }
+
+        over "PreviewSurface"
+        {
+            float2 ui:nodegraph:node:size = (148.5, 199)
+        }
+
+        over "Mix"
+        {
+            float2 ui:nodegraph:node:size = (109, 145)
+        }
+
+        over "Swizzle"
+        {
+            float2 ui:nodegraph:node:size = (133.5, 40)
+        }
+
+        over "Swizzle_1"
+        {
+            float2 ui:nodegraph:node:size = (145.5, 53)
+        }
+
+        over "Multiply_1"
+        {
+            float2 ui:nodegraph:node:size = (60, 36)
+        }
+
+        over "BaseColor"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Roughness"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Metallic"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Normal"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+    }
+
+    def "BlackABSPlastic" (
+        active = true
+        references = @BlackABSPlastic.usdz@
+    )
+    {
+        color3f inputs:Basecolor_Tint (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-45.51249, 49.172512)
+                    float2 sizeInSubgraph = (160.5, 53)
+                    int stackingOrderInSubgraph = 2293
+                }
+            }
+        )
+        float2 inputs:UV_Scale (
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-725.2588, 351.55255)
+                    float2 sizeInSubgraph = (138.5, 53)
+                    int stackingOrderInSubgraph = 2280
+                }
+            }
+        )
+        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+        over "Mix"
+        {
+            float2 ui:nodegraph:node:size = (109, 145)
+        }
+
+        over "Swizzle_1"
+        {
+            float2 ui:nodegraph:node:size = (145.5, 53)
+        }
+
+        over "Swizzle"
+        {
+            float2 ui:nodegraph:node:size = (133.5, 40)
+        }
+
+        over "Multiply_1"
+        {
+            float2 ui:nodegraph:node:size = (60, 36)
+        }
+
+        over "Dot"
+        {
+            float2 ui:nodegraph:node:size = (44, 18)
+        }
+
+        over "multiply"
+        {
+            float2 ui:nodegraph:node:size = (60, 36)
+        }
+
+        over "add"
+        {
+            float2 ui:nodegraph:node:size = (61.5, 36.5)
+        }
+
+        over "PreviewSurface"
+        {
+            float2 ui:nodegraph:node:size = (148.5, 199)
+        }
+
+        over "BaseColor"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Roughness"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Metallic"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+
+        over "Normal"
+        {
+            float2 ui:nodegraph:node:size = (158.5, 235)
+        }
+    }
+
+    def "DirectorMovieChair" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 3.1415927, 0)
+        }
+        prepend references = @DirectorMovieChair.usdz@
+    )
+    {
+        quatf xformOp:orient = (-4.371139e-8, 0, 1, 0)
+        float3 xformOp:scale = (70, 70, 70)
+        float3 xformOp:translate = (232.7124, 0, 412.4536)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+

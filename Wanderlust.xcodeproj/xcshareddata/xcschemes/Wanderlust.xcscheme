@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1520"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FC96DCDF2B87597C004F7D42"
+               BuildableName = "Wanderlust.app"
+               BlueprintName = "Wanderlust"
+               ReferencedContainer = "container:Wanderlust.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FC96DCDF2B87597C004F7D42"
+            BuildableName = "Wanderlust.app"
+            BlueprintName = "Wanderlust"
+            ReferencedContainer = "container:Wanderlust.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "Apikey"
+            value = "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&#10;&#10;&#10;&#10;&#10;&#10;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&#10;&#10;&#10;&#10;&#10;&#10;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&#10;&#10;&#10;&#10;&#10;&#10;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&#10;&#10;&#10;&#10;&#10;&#10;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"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FC96DCDF2B87597C004F7D42"
+            BuildableName = "Wanderlust.app"
+            BlueprintName = "Wanderlust"
+            ReferencedContainer = "container:Wanderlust.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

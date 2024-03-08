@@ -1,0 +1,74 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 1.0 (409.60.6)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["CharacterAnimations", "Wheatley_core___from_portal_2_original", "Transform"]
+    def "CharacterAnimations" (
+        active = true
+        references = @CharacterAnimations.usda@
+    )
+    {
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (-0.00024547242, 0, 0.20777327)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Wheatley_core___from_portal_2_original" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 0, 0)
+        }
+        references = @Wheatley_core_-_from_portal_2_original.usdz@
+    )
+    {
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (-0.31508285, 0, 0.7469177)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "SkinnedMeshes"
+        {
+            over "Sketchfab_model"
+            {
+                over "_c298db187fe4185bd33cf148715f60d_fbx"
+                {
+                    over "RootNode"
+                    {
+                        over "Wheatley_Core"
+                        {
+                            over "Object_4"
+                            {
+                                over "_rootJoint"
+                                {
+                                    over "skin0"
+                                    {
+                                        over "personality_sphere_model_personality_sphere_0"
+                                        {
+                                        }
+
+                                        over "personality_sphere_model_personality_sphere_glass_0"
+                                        {
+                                        }
+
+                                        over "personality_sphere_model_personality_sphere_light_damaged_0"
+                                        {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
